@@ -34,30 +34,31 @@ public final class PersonFactory {
     }
 
     /**
-     * Section 8.8
+     * Section 8.8; Part 3
      * @param personCount - number of Person objects to create
      * @return - ArrayList of Person objects
      */ // TODO
     public static List<Person> createPersonList(int personCount) {
-        return createPersonStream(personCount).collect(Collectors.toList());
+        return null;
     }
 
 
     /**
+     * Part 2
      * @param personCount - number of Person objects to create
      * @return - Array of Person objects
      */ // TODO
     public static Person[] createPersonArray(int personCount) {
-        return createPersonStream(personCount).toArray(Person[]::new);
+        return null;
     }
 
 
     /**
-     * Section 8.2
+     * Section 8.2; Part 1
      * @param personCount - number of Person objects to create
      * @return - Stream representation of collection of Person objects
      */ // TODO
     public static Stream<Person> createPersonStream(int personCount) {
-        return Stream.generate(PersonFactory::createRandomPerson).limit(personCount);
+        return null;
     }
 }
